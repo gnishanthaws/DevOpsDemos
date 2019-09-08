@@ -38,6 +38,8 @@ Using keybased authentication is advised. If you are still at learning stage use
 ```sh 
 # sed command replaces "PasswordAuthentication no to yes" without editing file 
  sed -ie 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
+ 
+ sudo service ssh restart
 ``` 
 Login as a ansadmin user on master and generate ssh key (Master)
 ```sh 
