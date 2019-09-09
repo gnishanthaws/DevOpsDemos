@@ -39,7 +39,9 @@ Using keybased authentication is advised. If you are still at learning stage use
 # sed command replaces "PasswordAuthentication no to yes" without editing file 
  sed -ie 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
  
- sudo service ssh restart
+ sudo service ssh restart --> amazon Linux
+ 
+ systemctl restart sshd  ---> RHEl 7,8 
 ``` 
 Login as a ansadmin user on master and generate ssh key (Master)
 ```sh 
