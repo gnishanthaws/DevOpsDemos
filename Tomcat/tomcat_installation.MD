@@ -23,6 +23,7 @@ create link files for tomcat startup.sh and shutdown.sh
   ln -s /opt/apache-tomcat-8.5.35/bin/shutdown.sh /usr/local/bin/tomcatdown
   tomcatup
 ```
+#test
 #### check point :
 access tomcat application from browser on prot 8080  
 http://<Public_IP>:8080
